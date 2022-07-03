@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "build": "cross-env NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
     "nodemon": "^2.0.18"
   }
